@@ -1,0 +1,86 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "38915474",
+      "name": "icon-sdp-yuyan2-16",
+      "font_class": "icon-sdp-yuyan2-16",
+      "unicode": "ec97",
+      "unicode_decimal": 60567
+    },
+    {
+      "icon_id": "38915475",
+      "name": "icon-sdp-shoucang2-16",
+      "font_class": "icon-sdp-shoucang2-16",
+      "unicode": "ec98",
+      "unicode_decimal": 60568
+    },
+    {
+      "icon_id": "38915476",
+      "name": "icon-sdp-yuyan-16",
+      "font_class": "icon-sdp-yuyan-16",
+      "unicode": "ec99",
+      "unicode_decimal": 60569
+    },
+    {
+      "icon_id": "38915477",
+      "name": "icon-sdp-shoucang-16",
+      "font_class": "icon-sdp-shoucang-16",
+      "unicode": "ec9a",
+      "unicode_decimal": 60570
+    },
+    {
+      "icon_id": "38915478",
+      "name": "icon-sdp-shaixuanxiangqing-16",
+      "font_class": "icon-sdp-shaixuanxiangqing-16",
+      "unicode": "ec9b",
+      "unicode_decimal": 60571
+    },
+    {
+      "icon_id": "38915479",
+      "name": "icon-sdp-bizhong2-16",
+      "font_class": "icon-sdp-bizhong2-16",
+      "unicode": "ec9c",
+      "unicode_decimal": 60572
+    },
+    {
+      "icon_id": "38915482",
+      "name": "icon-sdp-gengduoshaixuan-16",
+      "font_class": "icon-sdp-gengduoshaixuan-16",
+      "unicode": "ec9d",
+      "unicode_decimal": 60573
+    },
+    {
+      "icon_id": "38915483",
+      "name": "icon-sdp-baocunshaixuan-16",
+      "font_class": "icon-sdp-baocunshaixuan-16",
+      "unicode": "ec9e",
+      "unicode_decimal": 60574
+    },
+    {
+      "icon_id": "38915484",
+      "name": "icon-sdp-baocunshaixuan2-16.",
+      "font_class": "a-icon-sdp-baocunshaixuan2-16",
+      "unicode": "ec9f",
+      "unicode_decimal": 60575
+    },
+    {
+      "icon_id": "39063831",
+      "name": "批量删除",
+      "font_class": "piliangshanchu",
+      "unicode": "eca0",
+      "unicode_decimal": 60576
+    },
+    {
+      "icon_id": "39063840",
+      "name": "批量删除",
+      "font_class": "piliangshanchu1",
+      "unicode": "eca1",
+      "unicode_decimal": 60577
+    }
+  ]
+}
