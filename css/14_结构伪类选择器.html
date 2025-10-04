@@ -1,0 +1,201 @@
+=
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结构伪类选择器</title>
+  <style>
+    /* 第1个ul的第1个li元素字体颜色为粉色 */
+    .ul1 li:first-child {
+      color: pink;
+    }
+
+    /* 第1个ul的最后1个li元素字体颜色为粉色 */
+    .ul1 li:last-child {
+      color: pink;
+    }
+
+    /* 第2个ul的第奇数个li元素字体颜色为蓝色 */
+    .ul2 li:nth-child(odd) {
+      color: blue;
+    }
+
+    /* 第3个ul的第偶数个li元素字体颜色为蓝色 */
+    .ul3 li:nth-child(even) {
+      color: green;
+    }
+
+    /* 第4个ul的第2个及以后的li元素字体颜色为粉色 */
+    .ul4 li:nth-child(n+2) {
+      color: pink;
+    }
+
+    /* 第5个ul的前3个的li元素字体颜色为天蓝色 */
+    .ul5 li:nth-child(-n+3) {
+      color: deepskyblue;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .data {
+      /* 合并相邻边框 */
+      border-collapse: collapse;
+      /* 边框1像素 实线 颜色 */
+      border: 1px solid #f1f1f1;
+      width: 500px;
+      margin: 0 auto;
+      /* 让表格里面的文字水平居中 */
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* 表格第一行 */
+    .data tr:first-child {
+      background-color: rgb(204, 250, 235);
+      color: rgb(2, 116, 129)
+    }
+
+    /* 让奇数行改为隔行变色 背景颜色 */
+    .data tr:nth-child(2n+2) {
+      background-color: rgb(222, 226, 231);
+    }
+
+    /* 鼠标经过 表格的td和th元素 字体大小为16px 颜色为粉色 */
+    .data tr td:hover,
+    .data tr th:hover {
+      font-size: 20px;
+      font-weight: 700;
+      color: rgb(55, 150, 150);
+    }
+
+    .data1 {
+      width: 500px;
+      /* 让表格与单元格的相邻边框合并 */
+      border-collapse: collapse;
+      /* 文本水平居中 */
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>第1个ul</h3>
+  <ul class="ul1">
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+    <li>我是第6个li</li>
+  </ul>
+  <h3>第2个ul</h3>
+  <ul class="ul2">
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+    <li>我是第6个li</li>
+  </ul>
+  <h3>第3个ul</h3>
+  <ul class="ul3">
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+    <li>我是第6个li</li>
+  </ul>
+  <h3>第4个ul</h3>
+  <ul class="ul4">
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+    <li>我是第6个li</li>
+  </ul>
+  <h3>第5个ul</h3>
+  <ul class="ul5">
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+    <li>我是第6个li</li>
+  </ul>
+  <table class="data">
+    <tr>
+      <th>姓名</th>
+      <th>数据</th>
+      <th>日期</th>
+    </tr>
+    <tr>
+      <td>aaa</td>
+      <td>5</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <td>bbb</td>
+      <td>9</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <td>ccc</td>
+      <td>2</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <td>ddd</td>
+      <td>4</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <td>eee</td>
+      <td>7</td>
+      <td>2025</td>
+    </tr>
+
+  </table>
+  <!-- 新建表格 -->
+  <h3>新建表格</h3>
+  <table class="data1" border="1">
+    <tr>
+      <th>产品</th>
+      <th>价格</th>
+      <th>库存</th>
+    </tr>
+    <tr>
+      <td>笔记本电脑</td>
+      <td>¥5999</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>智能手机</td>
+      <td>¥3999</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>无线耳机</td>
+      <td>¥499</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>智能手表</td>
+      <td>¥1299</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>平板电脑</td>
+      <td>¥2999</td>
+      <td>10</td>
+    </tr>
+  </table>
+</body>
+
+</html>

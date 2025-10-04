@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-圆角边框</title>
+  <style>
+    .radius1 {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      border-radius: 50%;
+      color: aliceblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .radius2 {
+      width: 200px;
+      height: 100px;
+      background-color: pink;
+      border-radius: 10px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .radius3 {
+      width: 200px;
+      height: 50px;
+      background-color: pink;
+      border-radius: 10px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .radius4 {
+      width: 50px;
+      height: 200px;
+      background-color: pink;
+      border-radius: 25px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    .radius5 {
+      width: 200px;
+      height: 100px;
+      background-color: rgb(91, 27, 27);
+      border-radius: 10px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .radius6 {
+      width: 400px;
+      height: 100px;
+      background-color: rgb(91, 27, 27);
+      border-radius: 10px 20px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .radius7 {
+      width: 450px;
+      height: 100px;
+      background-color: rgb(91, 27, 27);
+      border-radius: 10px 20px 30px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .radius8 {
+      width: 450px;
+      height: 100px;
+      background-color: rgb(91, 27, 27);
+      border-radius: 10px 20px 30px 40px;
+      color: aliceblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .fulilian {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px 0px 20px 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="radius1">圆角边框1</div>
+  <div class="radius2">圆角边框2</div><br>
+  <div class="radius3">胶囊按钮
+    <!-- 设置为宽度或高度的一半即可实现 -->
+  </div><br>
+  <div class="radius4">圆角边框4</div>
+  <br>
+  <!-- 给图像添加圆角效果 -->
+  <img src="../html/3.jpg" alt="图像无法显示">
+  <!-- 给边框的4个角设置不同的圆角效果 -->
+  <h3>给边框的4个角设置不同的圆角效果</h3>
+  <div class="radius5">
+    设置1个值(4个角都为10px)
+  </div><br>
+  <div class="radius6">
+    设置2个值(左上，右下：10px， 左下，右上：20px)
+  </div><br>
+  <div class="radius7">
+    设置3个值(左上：10px， 右上，左下：20px， 右下：30px)
+  </div><br>
+  <div class="radius8">
+    设置4个值(左上：10px， 右上：20px， 左下：30px， 右下：40px)
+  </div><br>
+  <img src="../html/3.jpg" alt="图像无法显示" class="fulilian">
+  <p>葬送的芙莉莲</p>
+</body>
+
+</html>

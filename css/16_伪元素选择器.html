@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪元素选择器</title>
+  <style>
+    div::before {
+      content: "葬送的";
+      color: red;
+    }
+
+    div::after {
+      content: "喜欢辛美尔";
+      color: red;
+    }
+
+    p::first-letter {
+      color: red;
+      font-size: 30px;
+    }
+
+    p::first-line {
+      color: red;
+    }
+
+    textarea::placeholder {
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>伪元素选择器是通过元素的特殊状态来选择元素的伪元素选择器是通过元素的特殊状态来选择元素的伪元素选择器是通过元素的特殊状态来选择元素的伪元素选择器是通过元素的特殊状态来选择元素的伪元素选择器是通过元素的特殊状态来选择元素的</p>
+  <div>
+    芙莉莲
+  </div><br>
+  <textarea placeholder="请输入内容" id="" cols="30" rows="10"></textarea>
+</body>
+
+</html>

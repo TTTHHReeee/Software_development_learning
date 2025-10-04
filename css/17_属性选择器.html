@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>属性选择器</title>
+  <style>
+    /* 属性选择器 */
+    /* 1. 选择包含属性 */
+    div[class] {
+      color: red;
+    }
+
+    /* 2. 选择属性等于指定值 */
+    a[class="item33"] {
+      color: pink;
+    }
+
+    /* 3. 选择属性值以指定字符串开头 */
+    span[class^="1"] {
+      color: rgb(184, 184, 255);
+    }
+
+    /* 4. 选择属性值以指定字符串结尾 */
+    p[class$="333"] {
+      color: rgb(255, 184, 184);
+    }
+
+    /* 5. 选择属性值包含指定字符串 */
+    input[placeholder*="密码"] {
+      background-color: rgb(255, 202, 202);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      /* 去掉轮廓线 */
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>1. 选择包含属性 </h2>
+  <div>项目1</div>
+  <div class="item1">项目1</div>
+  <div class="item2">项目1</div>
+  <div class="item3">项目1</div>
+  <h2>2. 选择属性等于指定值</h2>
+  <a href="#" class="item11">项目2</a>
+  <a href="#" class="item22">项目2</a>
+  <a href="#" class="item33">项目2</a>
+  <h2>3. 选择属性值以指定字符串开头</h2>
+  <span class="1item11">项目3</span>
+  <span class="2item22">项目3</span>
+  <span class="3item33">项目3</span>
+  <h2>4. 选择属性值以指定字符串结尾</h2>
+  <p class="item111">项目4</p>
+  <p class="item222">项目4</p>
+  <p class="item333">项目4</p>
+  <h2>5. 选择属性值包含指定字符串</h2>
+  <input type="text" placeholder="请输入内容"><br>
+  <input type="password" placeholder="请输入密码"><br>
+  <input type="checkbox" value="提交"><br>
+  <input type="radio" value="男" name="1">男<br>
+  <input type="radio" value="女" name="1">女<br>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-普通边框</title>
+  <style>
+    div[class*="box"] {
+      width: 500px;
+      height: 300px;
+    }
+
+    /* 一般边框 */
+    .box1 {
+      border: 1px solid red;
+    }
+
+    .box2 {
+      border: 1px dashed blue;
+    }
+
+    .box3 {
+      border: 1px dotted green;
+    }
+
+    /* 自定义边框 */
+    .box4 {
+      border-top: 5px solid red;
+      border-right: 5px dashed blue;
+      border-bottom: 5px dotted green;
+      border-left: 5px double pink;
+    }
+
+    .box5 {
+      /* 利用了css的层叠性 */
+      border: 1px solid #d9e0ee;
+      border-top: 3px solid #ff8400;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ff8400;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">实线边框</div><br>
+  <div class="box2">虚线边框</div><br>
+  <div class="box3">点线边框</div><br>
+  <div class="box4">不同边框1</div><br>
+  <h2>单边边框</h2>
+  <div class="box5"></div><br>
+</body>
+
+</html>

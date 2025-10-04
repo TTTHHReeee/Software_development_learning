@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-背景常见属性</title>
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            /* background-color: pink; */
+            /* 背景图片 */
+            /* background-image: url(../html/3.jpg); */
+            /* 背景平铺 */
+            /* background-repeat: no-repeat; */
+            /* 当图片大小小于背景大小时，不让图片重复显示以盖过背景 */
+            /* background-repeat: repeat-x; 当图片小于背景大小是，控制图片横向重复显示 */
+            /* background-repeat: repeat-y;当图片小于背景大小是，控制图片纵向重复显示 */
+            /* 背景缩放 图片尺寸 */
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* background-size: 200px 200px; */
+            /* 背景位置 如果同时background设置为fixed，那么此时图像位置是相对于页面视口的*/
+            /* background-positiont: 100px 30px; */
+            /* background-position: center; */
+            /* 方位名词关键词: top bottom right left center */
+            /* 背景效果是选择固定还是滚动 */
+            /* background-attachment: scroll;盒子随着页面的滚动而滚动 */
+            /* background-attachment: fixed; */
+            /* 图片固定 不随页面的滚动而滚动 */
+            /* 复合写法 */
+            background: pink url(../html/3.jpg) no-repeat left 10px center/300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">background</div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-外边距</title>
+  <style>
+    div[class^="div"] {
+      width: 200px;
+      height: 200px;
+    }
+
+    .div1 {
+      background-color: pink;
+      /* margin: 100px; */
+      /* margin: 100px 50px; */
+      /* margin: 100px 50px 150px; */
+      /* margin: 100px 50px 150px 200px; */
+      margin-bottom: 10px;
+    }
+
+    .div2 {
+      background-color: rgb(227, 84, 84);
+      /* margin: 100px 50px; */
+    }
+
+    span[class^="span"] {
+      width: 200px;
+      height: 200px;
+    }
+
+    .span1 {
+      background-color: aquamarine;
+      margin-right: 20px;
+    }
+
+    .span2 {
+      background-color: rgb(255, 202, 202);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1">
+    <p class="title1">一个值：设置所有方向的外边距为apx</p>
+  </div>
+  <div class="div2">
+    <p class="title2">两个值：设置上下方向的外边距为apx，左右方向的外边距为bpx</p>
+  </div>
+  <div class="div3">
+    <p class="title3">三个值：设置上方向的外边距为apx，左右方向的外边距为bpx，下方向的外边距为cpx</p>
+  </div>
+  <div class="div4">
+    <p class="title4">四个值：设置上方向的外边距为apx，右方向的外边距为bpx，下方向的外边距为cpx，左方向的外边距为dpx</p>
+  </div>
+  <span class="span1">
+    高和宽的设置对行内元素无效 </span>
+  <span class="span2">
+    行内元素的外边距设置只对左右方向有效
+  </span>
+</body>
+
+</html>

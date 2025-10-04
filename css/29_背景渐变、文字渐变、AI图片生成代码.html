@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景渐变、文字渐变、AI图片生成代码</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            /* background: linear-gradient(to top, pink, red); */
+            /* deg: 角度 */
+            /* 色标位置加空格 */
+            background: linear-gradient(30deg, pink 50%, red 30%);
+        }
+
+        .text {
+            font-size: 30px;
+            font-weight: 700;
+            background-image: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+            /* 背景裁剪，以文字形式裁剪 */
+            /* -webkit- 前缀 谷歌浏览器老版本兼容写法 */
+            -webkit-background-clip: text;
+            /* 正常写法 */
+            background-clip: text;
+            /* 文字颜色透明，显示背景渐变 */
+            color: transparent;
+            /* 渐变背景文字 */
+        }
+
+        button {
+            /* 渐变背景按钮样式 */
+            background-image: linear-gradient(to right, #4E6EF2, #8B7EFF);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-image: linear-gradient(to right, #3A58D9, #7A6EFF);
+        }
+
+        button:active {
+            background-image: linear-gradient(to right, #2E48C9, #6B5EFF);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="text">我是渐变文字</div>
+    <button>百度一下</button>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视差滚动效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        /* 让html与body与当前可视区域一样大 */
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        section[class^="section"] {
+            width: 100%;
+            height: 100%;
+        }
+
+        .section1 {
+            background: url(/css/frieren/777.jpg) no-repeat fixed center/cover;
+        }
+
+        .section2 {
+            background: url(/css/frieren/111.png) no-repeat fixed center/cover;
+        }
+
+        .section3 {
+            background: url(/css/frieren/666.jpeg) no-repeat fixed center/cover;
+        }
+
+        .section4 {
+            background: url(/css/frieren/000.png) no-repeat fixed center/cover;
+        }
+
+        /* 基础内容样式 - 只包含通用属性 */
+        .content {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            line-height: 30px;
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        /* 特定内容区域的样式 - 覆盖基础样式的特定属性 */
+        .content1 {
+            height: 200px;
+            padding-left: 400px;
+        }
+
+        .content2,
+        .content3,
+        .content4 {
+            height: 50px;
+        }
+
+        .content p {
+            text-indent: 2em;
+        }
+
+        section[class^="section"] h2 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 80px;
+            margin-top: 200px;
+            letter-spacing: 10px;
+
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 第一屏 -->
+    <!-- div用于布局 section用于结构化文档，有语义，表示一个内容区块 -->
+    <section class="section1">
+        <!-- 第一屏 -->
+
+        <div class="content content1">
+            <p>《葬送的芙莉莲》是一部由山田钟人负责原作、阿部司负责作画的日本奇幻冒险漫画。故事围绕魔王被打倒后的英雄小队"那之后"的生活展开</p>
+            <p>主角是一位活了上千年的精灵魔法使——芙莉莲。</p>
+            <p>她与伙伴勇者辛美尔、僧侣海塔、战士艾森在消灭魔王后各自分道扬镳。</p>
+            <p>多年后，眼看昔日同伴们接连离世，芙莉莲逐渐开始理解人类情感，并带领新伙伴开启一场寻找"人类本质"的新旅程。</p>
+            <p>本作以温柔细腻的情感描写、独特的时间流逝感和温暖而深刻的治愈风格备受好评，斩获多项漫画与动画大奖，引发广泛关注。</p>
+        </div>
+        <h2>葬送的芙莉莲</h2>
+    </section>
+    <!-- 第二屏 -->
+    <!-- div用于布局 section用于结构化文档，有语义，表示一个内容区块 -->
+    <section class="section2">
+        <!-- 第二屏 -->
+
+        <div class="content content2">
+
+            <p>打倒了魔王的勇者一行人中的魔法使。长寿的精灵族。性格懒散，爱好收集魔法。。</p>
+
+        </div>
+        <h2>芙莉莲</h2>
+
+    </section>
+    <!-- 第三屏 -->
+    <!-- div用于布局 section用于结构化文档，有语义，表示一个内容区块 -->
+    <section class="section3">
+        <!-- 第三屏 -->
+        <div class="content content3">
+            <p>僧侣海塔收养的少女魔法使。芙莉莲的徒弟。与芙莉莲一同旅行中，一边照顾着芙莉莲一边吐槽。</p>
+        </div>
+        <h2>菲伦</h2>
+    </section>
+    <!-- 第四屏 -->
+    <!-- div用于布局 section用于结构化文档，有语义，表示一个内容区块 -->
+    <section class="section4">
+        <!-- 第四屏 -->
+        <div class="content content4">
+
+        </div>
+        <!-- <h2>葬送的芙莉莲</h2> -->
+    </section>
+
+
+</body>
+
+</html>

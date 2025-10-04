@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-内边距</title>
+  <style>
+    .div {
+      width: 200px;
+      height: 400px;
+      background-color: pink;
+      padding: 10px 20px 30px 40px;
+    }
+
+    .title {
+      width: 200px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(192, 192, 192);
+      border-top: 3px solid rgb(255, 161, 85);
+      border-bottom: 3px solid rgb(76, 147, 188);
+      padding-left: 20px;
+      line-height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div">s
+    <p>一个值：设置所有方向的内边距为apx</p>
+    <p>两个值：设置上下方向的内边距为apx，左右方向的内边距为bpx</p>
+    <p>三个值：设置上方向的内边距为apx，左右方向的内边距为bpx，下方向的内边距为cpx</p>
+    <p>四个值：设置上方向的内边距为apx，右方向的内边距为bpx，下方向的内边距为cpx，左方向的内边距为dpx</p>
+  </div>
+  <br>
+  <div class="title">时尚热搜</div>
+</body>
+
+</html>

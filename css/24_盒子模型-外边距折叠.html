@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-外边距折叠</title>
+  <style>
+    div[class^="div"] {
+      width: 200px;
+      height: 200px;
+    }
+
+    .div1 {
+      background-color: aquamarine;
+      margin-bottom: 100px;
+    }
+
+    .div2 {
+      background-color: rgb(255, 196, 0);
+      margin-top: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1">盒子1</div>
+  <div class="div2">盒子2</div>
+</body>
+
+</html>

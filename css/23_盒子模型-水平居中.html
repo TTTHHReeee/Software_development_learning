@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-水平居中</title>
+  <style>
+    div[class^="div"] {
+      width: 200px;
+      height: 200px;
+    }
+
+    .div1 {
+      margin: auto;
+    }
+
+    .div2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .div1 {
+      background-color: aquamarine;
+    }
+
+    .div2 {
+      background-color: rgb(255, 202, 202);
+    }
+
+    .div3 {
+      background-color: rgb(173, 216, 230);
+    }
+
+    span {
+      margin: auto;
+    }
+
+    p {
+      width: 50%;
+      text-align: center;
+      background-color: rgb(179, 143, 212);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div2">盒子2</div>
+  <div class="div3">盒子3</div>
+  <span>行内元素</span>
+  <p><span>行内元素</span></p>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>视频标签</h2>
+  <!-- 在HTML5中如果属性和值相同，则可以直接写属性，忽略值 -->
+  <h4>实例1</h4>
+  <video src="media/小米SU7.mp4" width="500" controls="controls"> 小米汽车SU7</video>
+  <h4>实例2</h4>
+  <video src="media/小米SU7.mp4" width="500" controls> 小米汽车SU7</video>
+  <!-- 循环播放效果 -->
+  <h4>实例3</h4>
+  <video src="media/小米SU7.mp4" width="500" controls autoplay muted loop> 小米汽车SU7</video>
+  <h4>实例4</h4>
+  <video src="media/小米SU7.mp4" width="500" controls loop poster="media/小米汽车.png"> 小米汽车SU7</video>
+  <h4>实例5</h4>
+  <video width="500" controls loop poster="media/小米汽车.png">
+    <source src="media/小米SU7.mp4" type="video/mp4">
+    <p>您的浏览器不支持 video 标签, 请升级浏览器</p>
+  </video>
+  <h2>音频标签</h2>
+  <h4>实例1</h4>
+  <audio src="media/小米.MP3"></audio>
+  <p>没有播放控件 所以无法播放</p>
+  <h4>实例2</h4>
+  <audio src="media/小米.MP3" controls></audio>
+  <h4>实例3</h4>
+  <!-- 自动播放-->
+  <audio src="media/小米.MP3" controls autoplay muted loop></audio>
+  <h4>实例4</h4>
+  <!-- 兼容性写法 -->
+  <audio controls loop>
+    <source src="media/小米.MP3" type="audio/MP3">
+    <p>您的浏览器不支持 audio 标签, 请升级浏览器</p>
+  </audio>
+</body>
+
+</html>

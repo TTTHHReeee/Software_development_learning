@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面基本布局</title>
+  <style>
+    * {
+      
+      /* 重置外边距 */
+      margin:0;
+      /* 重置内边距 */
+      padding:0;
+    }
+    .header {
+      /* 如果不写宽，则和浏览器一样宽 */
+      height: 80px;
+      background-color: pink;
+    }
+
+    .nav {
+      width: 1000px;
+      height: 40px;
+      background-color: rgb(173, 230, 241);
+    }
+
+    .main {
+      width: 1000px;
+      height: 1000px;
+      background-color: rgb(255, 225, 250);
+    }
+
+    .footer {
+      height: 150px;
+      background-color: rgb(151, 162, 164);
+    }
+
+    /* 让块级元素在浏览器中水平居中对齐 */
+    .center {
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 头部内容 -->
+  <div class="header"></div>
+  <!-- 导航栏 -->
+  <div class="nav center"></div>
+  <!-- 主体 -->
+  <div class="main center"></div>
+  <!-- 页面底部 -->
+  <div class="footer"></div>
+</body>
+
+</html>

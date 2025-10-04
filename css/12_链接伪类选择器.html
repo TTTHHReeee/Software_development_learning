@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪类选择器</title>
+  <style>
+    .a:link {
+      color: red;
+    }
+
+    .b:visited {
+      color: green;
+    }
+
+    .c:hover {
+      font-size: 30px;
+      color: pink;
+
+    }
+
+    .d:active {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 未访问链接 -->
+  <a href="www.baidu.com" class="a b c d" target="_blank">b百度一下</a><br>
+  <!-- 已访问链接 -->
+  <a href="#" class="a b c d">2222222222222</a><br>
+  <!-- 鼠标悬停 -->
+  <a href="#" class="a b c d">2222222222222</a><br>
+  <!-- 鼠标点击 -->
+  <a href="#" class="a b c d">2222222222222</a>
+</body>
+
+</html>
