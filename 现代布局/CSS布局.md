@@ -108,3 +108,36 @@
 `只对单行有效`
 
 ![image-20251005160524842](D:\桌面\前端\现代布局\assets\image-20251005160524842.png)
+
+### 4.7 改变主轴方向
+
+![image-20251007170020149](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20251007170020149.png)
+
+### 4.8 换行warp以及多行交叉轴对齐
+
+#### 4.8.1 换行warp
+
+![image-20251007172221881](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20251007172221881.png)
+
+#### 4.8.2 多行交叉轴对齐（align-content）
+
+![image-20251007173802088](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20251007173802088.png)
+
+### 4.9 子项目flex伸缩以及gap间隙
+
+#### 4.9.1 子项目flex伸缩尺寸
+
+![image-20251007175622466](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20251007175622466.png)
+
+`flex要写在“孩子”身上`
+
+#### 4.9.2 gap间距
+
+![image-20251007180551347](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20251007180551347.png)
+
+### 4.10 京东淘宝多行伸缩布局
+
+1. 淘宝：
+   - 在多盒嵌套的基础上，使用padding和margin实现上下文的对齐
+2. 京东：
+   - 在确保flex=1的基础上，通过使用calc函数计算出min-width和max-width来确定每一行所有盒子的数目

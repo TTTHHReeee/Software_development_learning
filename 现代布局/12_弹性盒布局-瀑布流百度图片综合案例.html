@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀑布流百度图片综合案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .col-flex {
+            display: flex;
+            width: 1180px;
+            margin: 20px auto;
+            /* border: 1px solid red; */
+            gap: 16px;
+        }
+
+        .col-flex .item {
+            flex: 1;
+        }
+
+        .col-flex .item a {
+            display: block;
+            width: 100%;
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+        }
+
+        .col-flex .item a img {
+            width: 100%;
+            display: block;
+            /* vertical-align: top; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-flex">
+        <div class="item">
+
+            <a href="#"><img src="./assets/image-20251005144855175.png"></a>
+            <a href="#"><img src="../css/frieren/000.png"></a>
+            <a href="#"><img src="../css/frieren/111.png"></a>
+            <a href="#"><img src="../css/frieren/222.jpg"></a>
+
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="../css/frieren/333.jpg">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="./assets/image-20251005144855175.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="./assets/image-20251005144855175.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="./assets/image-20251005144855175.png">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
