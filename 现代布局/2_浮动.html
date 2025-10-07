@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .box li {
+            /* 浮动元素会脱离文档流 */
+            float: left;
+            width: 190px;
+            height: 200px;
+            background-color: #51a3c6;
+            /* display: inline-block; */
+            margin-right: 14px;
+        }
+
+        .box li:nth-child(odd) {
+            background-color: pink;
+        }
+
+        /* .box li:last-child {
+            margin-right: 0;
+        } */
+        .box li:nth-child(3n) {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li>第一个盒子</li>
+        <li>第二个盒子</li>
+        <li>第三个盒子</li>
+        <li>第四个盒子</li>
+        <li>第五个盒子</li>
+        <li>第六个盒子</li>
+    </ul>
+</body>
+
+</html>
